@@ -20,6 +20,7 @@ public class gunCasting : MonoBehaviour
             raycastShoot();
         }
     }
+
     void raycastShoot()
     {
         Debug.DrawRay(transform.position, transform.forward * raycastDistance, Color.red);

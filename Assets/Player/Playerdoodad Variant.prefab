@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52bdfc9550132fa47adb99a4b23eb9dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastDistance: 100
+  raycastDistance: 1000
   hitLayer:
     serializedVersion: 2
     m_Bits: 8
