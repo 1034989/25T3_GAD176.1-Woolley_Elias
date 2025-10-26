@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6897248521107240339}
   - component: {fileID: 4572515632932675568}
   - component: {fileID: 1919655736984203061}
-  - component: {fileID: 5239225971371842935}
+  - component: {fileID: 2924302515206542299}
   m_Layer: 3
   m_Name: RangedAI
   m_TagString: Enemy
@@ -61,6 +61,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -136,7 +139,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5239225971371842935
+--- !u!114 &2924302515206542299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,13 +148,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3751770234583265825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aed9c3b945c2ab6489f5efbed71786e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e989dc8984b9604e971c39bd1b2aacc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerChar: {fileID: 0}
   enemyChar: {fileID: 3751770234583265825}
   speed: 3
-  rotationSpeed: 3
+  rotationSpeed: 2
   raycastDistance: 10
   hitLayer:
     serializedVersion: 2

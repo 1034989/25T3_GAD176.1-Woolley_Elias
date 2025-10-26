@@ -1,7 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "WeaponList", menuName = "WeaponList", order = 0)]
-public class weaponList : ScriptableObject
+public class Weapon : ScriptableObject
 {
     public string weaponName;
     public int ammoCount;

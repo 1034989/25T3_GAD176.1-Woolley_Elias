@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class gunCommon : MonoBehaviour
@@ -18,7 +20,7 @@ public class gunCommon : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))// Change weapon
-        {
+        { 
             weaponIndex++;
             if (weaponIndex >= allWeapons.Count)
             {
@@ -37,7 +39,7 @@ public class gunCommon : MonoBehaviour
             weaponEquipped.reloadWeapon();
         }
         {
-
+            
         }
     }
     void createWeaponInstances()

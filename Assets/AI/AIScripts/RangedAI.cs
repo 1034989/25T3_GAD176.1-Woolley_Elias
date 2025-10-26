@@ -1,8 +1,10 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace EnemyAI
 {
-    public class RangedAI : AIBehaviour
+    public class RangedAI : AIMovement
     {
         public float raycastDistance = 10f; // max shooting distance
         public LayerMask hitLayer; // layer which can be hit
@@ -11,7 +13,7 @@ namespace EnemyAI
         {
             // Find the player character in the scene
             playerChar = GameObject.FindGameObjectWithTag("Player");
-
+            
         }
 
         // Update is called once per frame
@@ -33,7 +35,7 @@ namespace EnemyAI
             else
             {
                 // if player is further than 10 keep moving
-                speed = 3f;
+                speed = 3f; 
             }
         }
         void raycastShoot()

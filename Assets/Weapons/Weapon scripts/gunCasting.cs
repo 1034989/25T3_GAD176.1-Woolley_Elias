@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class gunCasting : MonoBehaviour
@@ -7,7 +9,7 @@ public class gunCasting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -32,7 +34,7 @@ public class gunCasting : MonoBehaviour
                 //moves the enemy to a specific position
                 hit.collider.transform.position = new Vector3(UnityEngine.Random.Range(-150, 150), 2, UnityEngine.Random.Range(-150, 150));
             }
-
+            
         }
     }
 }

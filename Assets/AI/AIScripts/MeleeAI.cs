@@ -1,9 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace EnemyAI
 {
-
-    public class MeleeAI : AIBehaviour
+    
+    public class MeleeAI : AIMovement
     {
         public float raycastDistance = 3f; // max shooting distance
         public LayerMask hitLayer; // layer which can be hit
@@ -14,15 +16,28 @@ namespace EnemyAI
             playerChar = GameObject.FindGameObjectWithTag("Player");
         }
 
-
+        
         void Update()
         {
             // Move the enemy character towards the player character no pathfinding
             moveEnemy();
             moveAngle(); //to change the enemy character's rotation to face the player character
+            Hold();
             raycastShoot();
         }
-
+        void Hold()
+        {
+            if (Vector3.Distance(playerChar.transform.position, enemyChar.transform.position) < 2f)
+            {
+                // If the player is in 2 stop
+                speed = 0f;
+            }
+            else
+            {
+                // if player is further than 2 keep moving
+                speed = 5f;
+            }
+        }
         void raycastShoot()
         {
             Debug.DrawRay(transform.position, transform.forward * raycastDistance, Color.red);
