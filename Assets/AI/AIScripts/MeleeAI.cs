@@ -1,9 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace EnemyAI
 {
-
-    public class MeleeAI : AIBehaviour
+    
+    public class MeleeAI : AIMovement
     {
         public float raycastDistance = 3f; // max shooting distance
         public LayerMask hitLayer; // layer which can be hit
@@ -14,7 +16,7 @@ namespace EnemyAI
             playerChar = GameObject.FindGameObjectWithTag("Player");
         }
 
-
+        
         void Update()
         {
             // Move the enemy character towards the player character no pathfinding

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7417539743004258704}
   - component: {fileID: 7024153599539275845}
   - component: {fileID: 2173173637649685490}
-  - component: {fileID: 3595807572031873103}
+  - component: {fileID: 4357325422354050653}
   m_Layer: 3
   m_Name: MeleeAI
   m_TagString: Enemy
@@ -61,6 +61,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -134,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3595807572031873103
+--- !u!114 &4357325422354050653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 533861576694871677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1c57daff69ea7842a23c973fe267030, type: 3}
+  m_Script: {fileID: 11500000, guid: 528cdd8e7919944458481e57ae1d65da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerChar: {fileID: 0}
@@ -153,4 +156,4 @@ MonoBehaviour:
   raycastDistance: 3
   hitLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0

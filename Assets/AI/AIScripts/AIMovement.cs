@@ -1,16 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace EnemyAI
 {
-
-
-    public class AIBehaviour : MonoBehaviour
+    public class AIMovement : MonoBehaviour
     {
         public GameObject playerChar;
         public GameObject enemyChar;
         public float speed;
         public float rotationSpeed;
-
+        
         void start()
         {
             // Find the player character in the scene
